@@ -1,0 +1,87 @@
+.btn-burger {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .btn-burger {
+display: block;
+position: relative;
+width: 30px;
+height: 20px;
+float: right;
+margin: 15px;
+
+    }
+    .btn-burger::before,
+    .btn-burger::after{
+content: '';
+background-color:white;
+
+position: absolute;
+width: 100%;
+height: 2px;
+left: 0;
+transition: all 0.3s ease 0s;
+    }
+
+    .btn-burger::before {
+        top: 0;
+    }
+    .btn-burger::after {
+        bottom: 0;
+    }
+
+    .btn-burger span {
+        position: absolute;
+       background-color:white;
+      
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu_list {
+     padding-top: 50px;
+     
+    }
+
+    .menu_nav {
+        /* position: fixed; */
+        top: -100%;
+        display: none;
+    }
+
+    .menu_list li{
+display: block;
+margin: 15px;
+width: 90vw;
+
+}
+
+.btn-burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.btn-burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+.btn-burger.active span {
+    transform: scale(0);
+ }
+
+ .logo {
+     display: none;
+     /* width: 30%; */
+     /* position: absfolute; */
+     /* top: 0; */
+ }
+
+ .menu_nav.active {
+     top: 0;
+     display: flex;
+ }
+}

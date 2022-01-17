@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="
+      background-image: url(https://klike.net/uploads/posts/2019-06/1559370578_1.jpg);
+    "
+  >
+    <div class="container">
+      <header>
+        <div class="wrapper">
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="menu">
+          <nav class="menu_nav">
+            <div class="logo">
+              <a href="">
+                <img src="img/logo.png" alt="logo" />
+              </a>
+            </div>
+            <!-- <div class="menu_block"> -->
+            <ul class="menu_list">
+              <li class="menu_Home"><a href="">Home</a></li>
+              <li class="menu_Gallery"><a href="">Gallery</a></li>
+              <li class="menu_Contacts"><a href="">Contacts</a></li>
+              <li class="menu_Sign"><a href="">Sign in</a></li>
+            </ul>
+          </nav>
+          <!-- </div> -->
+          <!-- </div> -->
+        </div>
+      </header>
+      <main class="main_content">
+        <div class="image">
+          <img
+            src="https://anga.ua/ifiles/files/odnodnev_rus1-min.png"
+            alt=""
+          />
+        </div>
+        <p class="text"></p>
+        <form id="main-form">
+          <!--  добавляем событие (функцию) ы в дужках передаем эту же форму -->
+          <label for="name">Name:</label>
+          <!--method="post" чтоб даные не выводились в строку адреса-->
+          <input type="text" name="name" placeholder="Name" id="nameInput" />
+          <br /><br />
+          <label for="password">password:</label>
+          <input type="password" name="pass" placeholder="password" id="pass" />
+          <br /><br />
+          <label for="repass">repass:</label>
+          <input
+            type="password"
+            name="repass"
+            placeholder="repass"
+            id="repass"
+          />
+          <br /><br />
+          <!-- <span>Пол:</span> -->
+          <!-- <input type="radio" name="state" id="male" value="чол" /> -->
+          <!-- <label for="male">чол:</label> -->
+          <!-- <input type="radio" name="state" id="female" value="жен" /> -->
+          <!-- <label for="female">жен:</label> <br /><br /> -->
+          <div id="error"></div>
+          <input type="submit" name="submit" id="submit" value="готово" />
+        </form>
+        <div class="containers">
+          <div
+            class="slide"
+            style="
+              background-image: url('https://azbyka.ru/palomnik/images/1/1e/%D0%9A%D0%B8%D0%B5%D0%B2.jpg');
+            "
+          >
+            <h3>Kiev</h3>
+          </div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://dumskaya.net/pics/b2/picturepicture_163065689212165063362573_34829.jpg');
+            "
+          >
+            <h3>Odessa</h3>
+          </div>
+          <div
+            class="slide active"
+            style="
+              background-image: url('https://otdihnavse100.com.ua/img/cms/blog/ekskursiya-na-zatoplennuyu-cerkov.jpg');
+            "
+          >
+            <h3>Rzhishchev</h3>
+          </div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://ztu.edu.ua/ua/study/images/zhytomyr/01.jpg');
+            "
+          >
+            <h3>Zhytomyr</h3>
+          </div>
+          <div
+            class="slide"
+            style="
+              background-image: url('https://city-adm.lviv.ua/images/_news/2020/10/23/fontanopera/IMG_0923.JPG');
+            "
+          >
+            <h3>Lviv</h3>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="card">
+          <div class="date">31.08</div>
+          <div class="city">31.08</div>
+          <div class="wind"></div>
+          <div class="temperature">+20</div>
+        </div>
+      </aside>
+      <footer></footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

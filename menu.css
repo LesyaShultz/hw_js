@@ -1,0 +1,36 @@
+.logo img {
+    height: 80px;
+    margin-left: 20px;
+}
+
+.menu {
+    max-height: 100px;
+}
+
+.menu_list li {
+    display: inline;
+    margin-right: 5px;
+    padding: 10px 30px;
+    background: radial-gradient(circle, rgba(62, 106, 191, 0.9556197478991597) 34%, rgba(230, 231, 242, 0.33657212885154064) 94%);
+    color: white;
+    border-radius: 20px;
+}
+.menu_list li:hover {
+    opacity: 0.5;
+    transition: all 0.9s ease-out;
+     box-shadow: 10px 5px 5px white;
+    
+}
+
+a {
+    color: white;
+}
+
+.menu_nav {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    text-align: center;
+    align-items: center;
+}

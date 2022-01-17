@@ -1,0 +1,105 @@
+@import url('settings.css');
+@import url('menu.css');
+@import url('slide.css');
+@import url('form.css');
+@import url('weather.css');
+@import url('burger.css');
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: 64px 1fr 64px;
+    background-color: rgba(81, 81, 81, 0.686);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+}
+
+header {
+    grid-area: header;
+    /* box-shadow: 2px 2px 4px grey; */
+}
+
+aside {
+    grid-area: aside;
+    /* box-shadow: 2px 2px 4px grey; */
+}
+
+main {
+    grid-area: main;
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.391);
+    display: grid;
+    overflow-y: auto;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    line-height: 64px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+.image {
+    display: none;
+    justify-content: center;
+    
+    padding-top: 30px;
+    padding-right: 30px;
+
+}
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 850px) {
+    .container {
+        grid-template-areas:
+            'header'
+            'aside'
+            'main'
+            'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: 64px max-content 1fr 64px;         
+    }
+    .image img {
+width: 80%;
+justify-content: center;
+align-items: center;
+
+    }
+    .image {
+margin: 60% auto;
+max-height: 40%;
+    }
+    /* aside { */
+   /* padding-top: 50%; */
+        /* } */
+    }
+
+
+
+

@@ -1,0 +1,32 @@
+.card {
+    background-image: url(https://st.depositphotos.com/1006472/4297/v/600/depositphotos_42970463-stock-video-weather-forecast-background-time-lapse.jpg);
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    font-family: serif;
+    text-align: center;
+    /* background-color: rgb(65, 62, 62); */
+    width: 134px;
+    height: 180px;
+    color: white;
+}
+
+.card:hover {
+    box-shadow: 0 0 7px black;
+}
+
+.date,
+.city,
+.wind,
+.temperature {
+    background-color: rgba(65, 62, 62, 0.357);
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.temperature::after {
+    content: "°";
+}
